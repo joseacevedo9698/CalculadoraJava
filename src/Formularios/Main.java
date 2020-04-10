@@ -451,7 +451,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
+        pantalla = String.valueOf(p.getAns());
+        lbl_pantalla.setText(pantalla);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -532,6 +533,8 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         saveData(false);
+        System.out.println(numero1);
+        System.out.println(numero2);
         p.setN1(Float.parseFloat(numero1));
         p.setN2(Float.parseFloat(numero2));
         switch (sw) {
@@ -560,7 +563,6 @@ public class Main extends javax.swing.JFrame {
         }
         
         numero1 = String.valueOf(p.getAns());
-
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
